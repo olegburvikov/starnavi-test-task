@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 300px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.title {
+  margin: 0 0 20px;
+}
+
+.logs {
+  height: 620px;
+  padding-right: 20px;
+  overflow-x: auto;
+}
+
+.log {
+  background: #FBF8E3;
+  color:#896D3A;
+  max-width: 300px;
+  border: 1px solid #FBF0D4;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 20px 4px;
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}

@@ -1,0 +1,29 @@
+.table {
+  max-width: 600px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.body {
+  --table-size: 0;
+  display: grid;
+  padding: 1px;
+  width: 600px;
+  height: 600px;
+  grid-template-columns: repeat(var(--table-size), 1fr);
+  grid-template-rows: repeat(var(--table-size), 1fr);
+  background: #000;
+}
+
+.field {
+  background-color: #fff;
+  transition: background-color 100ms;
+  border: 1px solid #000;
+  &.active {
+    background-color: #03A8F4;
+  }
+}
